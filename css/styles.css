@@ -1,0 +1,366 @@
+
+
+
+/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/*desktop responsive*/
+@media (min-width:1024px)
+{
+   h1 {
+        font-size: 48px;
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    section {
+        width: 100%;
+        flex-direction: row;                
+    }
+
+    article.presentacion{
+        width: 50%;
+        text-align: left;
+    }
+
+    ul#contacto-links li{
+        margin: 32px;
+    }
+
+}
+
+
+@media(min-width:768px){
+    p{
+        font-size: 20px;
+    }   
+}
+
+
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    /* display: flexbox; */
+}
+
+body{
+    min-height: "100vh";
+    font-family: 'Lato', sans-serif;
+    background-color: #fbfbfb;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #0f0f0f;  
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px #5f5f5f;
+    background-color:#fbfbfb;
+    top:0;
+    left: 0; 
+}
+
+.logo{
+    width: 100px;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#boton{
+    width: 50px;
+    height: 50px;
+    background-color: #64B5F6;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;  }
+  
+  #boton i{
+    font-size: 30px;
+  }
+  
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    height: 100%;
+    margin: auto;
+}
+
+/* iconos*/
+
+ul.menu{
+    display: flex;
+    font-size: 20px;    
+}
+
+li.menu-item a{
+    padding: 16px;
+    display: inline-block;  
+}
+
+li.menu-item:hover, 
+li.menu-item a.active,
+a.iconos:hover{
+    background: #64B5F6 ;
+    transition: background-color 0.3s;  
+}
+
+/* imagen de fondo*/
+#inicio{
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    background-image: url(https://elements-cover-images-0.imgix.net/c218b493-8829-4abc-9ffe-5f5e2a7ae698?auto=compress%2Cformat&fit=max&w=900&s=2841dbe85a96f9f0951ddf021d2eb3ac);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+}
+/* el login*/
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfbfb;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10 px rgba(71, 3, 6, 0.7);
+}
+
+form .title{
+color: #0f0f0f;
+font-size: 40px;
+font-weight: 900;
+margin-bottom: 30px;
+
+}
+
+form label{
+    margin-bottom: 35px;
+
+}
+form label .fa-solid {
+font-size: 20px;
+color: #64B5F6;
+margin-right: 10px;
+}
+
+form label input{
+    outline: none;
+    border: none;
+    color: #0f0f0f;
+    border-bottom: solid 1px #64B5F6;
+    padding: 0 5px;
+    font-size: 18px;
+}
+form label input::placeholder{
+    color: rgba(37,37,37,0.5);
+}
+
+form .link{
+    color: #252525;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+form button{
+    color: #fbfbfb;
+    border: none;
+    background: linear-gradient(to right, #64B5F6, #1d29ce);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+/* seccion contacto*/
+
+#contacto{
+     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   flex-direction: column;
+
+  
+}
+
+
+
+.iconos{
+    display: flex;
+    width: 330px;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  
+
+} 
+
+.icono {
+    padding: 10px;
+    width: 90px;
+   
+}
+
+/*****footer*******/
+
+footer{
+    min-height: "100vh";
+    background-color: #64B5F6 ;
+    height: 90px;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/********modo oscuro*********/
+.Modo_Oscuro {
+    background-color: black !important;
+    color: #fbfbfb !important;
+}
+
+.Modo_Oscuro_Icono{
+    background-color: white;
+}
+
+
+/* ************menú***************/
+#inicioUno{
+padding: 10%;
+width: 100%;
+display: flex;
+
+}
+
+
+
+h2{
+color: #7a7a7a;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 30px;
+}
+
+ img {
+    float:inline-start;
+    justify-content: center;
+    align-items: center;
+      
+  }
+
+#cliente{
+    padding-bottom: 100px;
+    padding-left: 300px;
+
+}
+
+
+
+
+
+
+
+
+/*Registro de producto*/
+.mostrar{
+    display: flex;
+font-size: 100%;
+font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+table, tr, td {
+    font-size: 20px;
+    
+   
+  }
+  table{
+    border: 1px solid #000;
+  }
+
+  th td{
+    vertical-align: top;
+  }
+  
+  tr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    border-color: #0f0f0f;
+  }
+  
+  td{
+    width: 100%;
+    text-align: center;
+  }
+    
+
+    /*////////////////////////*/
+    /* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para las filas del encabezado */
+  thead tr {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para las celdas del encabezado */
+  thead td {
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Estilo para las filas de datos */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilo para las celdas de datos */
+  tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+

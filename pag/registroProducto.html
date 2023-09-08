@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Jova Tech</title>
+    <script src="https://kit.fontawesome.com/0e2dd1df28.js" crossorigin="anonymous"></script>
+       <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+
+        <img class="logo" src="../img/logo1.jpg" alt="foto de personal">
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="#inicio" class="active">Inicio</a></li>
+                <li class="menu-item"><a href="#contacto" >Contacto</a> </li>
+                <button id="boton"><i class="fas fa-moon"></i></button>
+            </ul>             
+        </nav> 
+    </header>
+    <main >
+        <section id="inicio" class="capturar">
+            <form action=""  class="FormularioProducto">
+                <h1 class="title">Registro de producto</h1>
+                <label for="nombreProducto">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <input placeholder="Nombre del producto" type="text" id="nombreProducto" required>
+                </label>
+                <label for="descripcion">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <input placeholder="Descripción" type="text" id="descripcion" required>
+                </label>
+                <label for="cantidad">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <input placeholder="Cantidad" type="text" id="cantidad" required>
+                </label>
+
+                <label for="valorUni">
+                    <i class="fa-solid fa-money-bill"></i>
+                    <input placeholder="valor Unitario" type="text" id="valorUni" required>
+                </label>
+
+                <a href="./menu.html" class="link">Volver al menú anterior</a> 
+
+                <button class="btnGuardar" id="btnGuardar" type="button" value="Guargar">Guardar</button>
+                </form>
+                
+
+        </section>   
+        <section class="mostrar">
+            <table>
+              <thead>
+                <tr>
+                  <td>Producto</td>
+                  <td>Descripción</td>
+                  <td>Cantidad</td>
+                  <td>Valor Unitario</td>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                
+              </tbody>
+            </table>
+          </section>
+
+        <section id="contacto">       
+            <ul class="iconos">
+                 <li>
+                    <a href="mailto:johanagerardino@gmail.com" target="_blank">
+                        <img class="icono" src="../img/mail.png" alt="icono de email">
+                    </a>                       
+                </li>
+                <li>                       
+                    <a href="https://github.com/johanagerardino " target="_blank">
+                        <img  class="icono" src="../img/github.png" alt="icono de github">
+                    </a>      
+                </li>
+                <li >
+                    <a href="https://www.linkedin.com/in/johana-gerardino-0116b684/" target="_blank">
+                        <img  class="icono" src="../img/linkedin.png" alt="icono de linkedin">
+                    </a>            
+                </li>
+            </ul>   
+        </section>   
+    </main>   
+    <footer>
+        <p>Copyright © 2023  Medellín - Colombia |  Desarrollo de software| Políticas de privacidad</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>

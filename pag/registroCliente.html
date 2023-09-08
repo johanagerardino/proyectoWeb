@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa Jova Tech</title>
+    <script src="https://kit.fontawesome.com/0e2dd1df28.js" crossorigin="anonymous"></script>
+       <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+
+        <img class="logo" src="../img/logo1.jpg" alt="foto de personal">
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="#inicio" class="active">Inicio</a></li>
+                <li class="menu-item"><a href="#contacto" >Contacto</a> </li>
+                <button id="boton"><i class="fas fa-moon"></i></button>
+            </ul>             
+        </nav> 
+    </header>
+    <main >
+        <section id="inicio" class="capturar">
+            <form action=""  class="Formulariocliente">
+                <h1 class="title">Registro de cliente</h1>
+                <label for="nombrecliente">
+                    <i class="fa-solid fa-user"></i>
+                    <input placeholder="Nombre del cliente" type="text" id="nombrecliente" required>
+                </label>
+                <label for="telefono">
+                    <i class="fa-solid fa-phone"></i>
+                    <input placeholder="Teléfono" type="text" id="telefono" required>
+                </label>
+                <label for="direccion">
+                    <i class="fa-solid fa-route"></i>
+                    <input placeholder="Dirección" type="text" id="direccion" required>
+                </label>
+
+                <label for="correo">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input placeholder="Correo" type="text" id="correo" required>
+                </label>
+
+                <a href="./menu.html
+                " class="link">Volver al menú anterior</a> 
+
+                <button class="btnGuardar" id="btnGuardar" type="button" value="Guargar">Guardar</button>
+                </form>
+                
+
+        </section>   
+        <section class="mostrar">
+            <table>
+              <thead>
+                <tr>
+                  <td>Nombre</td>
+                  <td>Teléfono</td>
+                  <td>Dirección</td>
+                  <td>Correo</td>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                
+              </tbody>
+            </table>
+          </section>
+
+        <section id="contacto">       
+            <ul class="iconos">
+                 <li>
+                    <a href="mailto:johanagerardino@gmail.com" target="_blank">
+                        <img class="icono" src="../img/mail.png" alt="icono de email">
+                    </a>                       
+                </li>
+                <li>                       
+                    <a href="https://github.com/johanagerardino " target="_blank">
+                        <img  class="icono" src="../img/github.png" alt="icono de github">
+                    </a>      
+                </li>
+                <li >
+                    <a href="https://www.linkedin.com/in/johana-gerardino-0116b684/" target="_blank">
+                        <img  class="icono" src="../img/linkedin.png" alt="icono de linkedin">
+                    </a>            
+                </li>
+            </ul>   
+        </section>   
+    </main>   
+    <footer>
+        <p>Copyright © 2023  Medellín - Colombia |  Desarrollo de software| Políticas de privacidad</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
